@@ -1,0 +1,479 @@
+[
+    {
+      "Max": 0.5,
+      "Min": 0.1,
+      "MemberName": "alb_dry_hruDR",
+      "Fixed": true,
+      "DisplayName": "HRU:DR Dry Soil Albedo",
+      "DecimalPlaces": 0,
+      "Value": 0.26
+    },
+    {
+      "Max": 0.5,
+      "Min": 0.1,
+      "MemberName": "alb_dry_hruSR",
+      "Fixed": true,
+      "DisplayName": "HRU:SR Dry Soil Albedo",
+      "DecimalPlaces": 0,
+      "Value": 0.26
+    },
+    {
+      "Max": 0.5,
+      "Min": 0.1,
+      "MemberName": "alb_wet_hruDR",
+      "Fixed": true,
+      "DisplayName": "HRU:DR Wet Soil Albedo",
+      "DecimalPlaces": 0,
+      "Value": 0.16
+    },
+    {
+      "Max": 0.5,
+      "Min": 0.1,
+      "MemberName": "alb_wet_hruSR",
+      "Fixed": true,
+      "DisplayName": "HRU:SR Wet Soil Albedo",
+      "DecimalPlaces": 0,
+      "Value": 0.16
+    },
+    {
+      "Max": 0.05,
+      "Min": 0.02,
+      "MemberName": "cGsmax_hruDR",
+      "Fixed": false,
+      "DisplayName": "HRU:DR Conversion Coefficient From Vegetation Photosynthetic Capacity Index to Maximum Stomatal Conductance",
+      "DecimalPlaces": 0,
+      "Value": 0.0320045265678736
+    },
+    {
+      "Max": 0.05,
+      "Min": 0.02,
+      "MemberName": "cGsmax_hruSR",
+      "Fixed": false,
+      "DisplayName": "HRU:SR Conversion Coefficient From Vegetation Photosynthetic Capacity Index to Maximum Stomatal Conductance",
+      "DecimalPlaces": 0,
+      "Value": 0.02371068048102
+    },
+    {
+      "Max": 0.25,
+      "Min": 0.04,
+      "MemberName": "ER_frac_ref_hruDR",
+      "Fixed": false,
+      "DisplayName": "HRU:DR Ratio of Average Evaporation Rate Over Average Rainfall Intensity During Storms Per Unit Canopy Cover",
+      "DecimalPlaces": 0,
+      "Value": 0.0735562467806121
+    },
+    {
+      "Max": 1,
+      "Min": 0.2,
+      "MemberName": "FsoilEmax_hruDR",
+      "Fixed": false,
+      "DisplayName": "HRU:DR Soil Evaporation Scaling Factor When Soil Water Supply is Not Limiting Evaporation",
+      "DecimalPlaces": 0,
+      "Value": 0.227465527270008
+    },
+    {
+      "Max": 1,
+      "Min": 0.2,
+      "MemberName": "FsoilEmax_hruSR",
+      "Fixed": false,
+      "DisplayName": "HRU:SR Soil Evaporation Scaling Factor When Soil Water Supply is Not Limiting Evaporation",
+      "DecimalPlaces": 0,
+      "Value": 0.929708357540083
+    },
+    {
+      "Max": 0.25,
+      "Min": 0.1,
+      "MemberName": "fvegref_G_hruDR",
+      "Fixed": true,
+      "DisplayName": "HRU:DR Reference Soil Cover Fraction That Determines The Rate of Decline in Soil Heat Flux With Increasing Canopy Cover",
+      "DecimalPlaces": 0,
+      "Value": 0.15
+    },
+    {
+      "Max": 0.25,
+      "Min": 0.1,
+      "MemberName": "fvegref_G_hruSR",
+      "Fixed": true,
+      "DisplayName": "HRU:SR Reference Soil Cover Fraction That Determines The Rate of Decline in Soil Heat Flux With Increasing Canopy Cover",
+      "DecimalPlaces": 0,
+      "Value": 0.15
+    },
+    {
+      "Max": 0.5,
+      "Min": 0.25,
+      "MemberName": "Gfrac_max_hruDR",
+      "Fixed": true,
+      "DisplayName": "HRU:DR Fraction of Daytime Net Radiation Lost To Soil Heat Storage for an Unvegetated Surface",
+      "DecimalPlaces": 0,
+      "Value": 0.3
+    },
+    {
+      "Max": 0.5,
+      "Min": 0.25,
+      "MemberName": "Gfrac_max_hruSR",
+      "Fixed": true,
+      "DisplayName": "HRU:SR Fraction of Daytime Net Radiation Lost To Soil Heat Storage for an Unvegetated Surface",
+      "DecimalPlaces": 0,
+      "Value": 0.3
+    },
+    {
+      "Max": 50,
+      "Min": 0.1,
+      "MemberName": "hveg_hruSR",
+      "Fixed": true,
+      "DisplayName": "HRU:SR Height of Vegetation Canopy",
+      "DecimalPlaces": 0,
+      "Value": 0.5
+    },
+    {
+      "Max": 10,
+      "Min": 0.1,
+      "MemberName": "K_gw_scale",
+      "Fixed": false,
+      "DisplayName": "K_gw_scale",
+      "DecimalPlaces": 0,
+      "Value": 0.502237767850745
+    },
+    {
+      "Max": 3,
+      "Min": 0.05,
+      "MemberName": "K_rout_int",
+      "Fixed": false,
+      "DisplayName": "K_rout_int",
+      "DecimalPlaces": 0,
+      "Value": 0.157715263798048
+    },
+    {
+      "Max": 3,
+      "Min": 0.05,
+      "MemberName": "K_rout_scale",
+      "Fixed": false,
+      "DisplayName": "K_rout_scale",
+      "DecimalPlaces": 0,
+      "Value": 0.0507853186467834
+    },
+    {
+      "Max": 10,
+      "Min": 0.1,
+      "MemberName": "K0sat_scale",
+      "Fixed": false,
+      "DisplayName": "Scale for saturated hydraulic conductivity surface layer",
+      "DecimalPlaces": 0,
+      "Value": 2.87280828479753
+    },
+    {
+      "Max": 1,
+      "Min": 0.01,
+      "MemberName": "Kdsat_scale",
+      "Fixed": false,
+      "DisplayName": "Scale for saturated hydraulic conductivity deep layer",
+      "DecimalPlaces": 0,
+      "Value": 0.0100361082712838
+    },
+    {
+      "Max": 1,
+      "Min": 0.01,
+      "MemberName": "Kr_coeff",
+      "Fixed": false,
+      "DisplayName": "Kr_coeff",
+      "DecimalPlaces": 0,
+      "Value": 0.074055027961705
+    },
+    {
+      "Max": 10,
+      "Min": 0.01,
+      "MemberName": "Kssat_scale",
+      "Fixed": false,
+      "DisplayName": "Scale for saturated hydraulic conductivity shallow layer",
+      "DecimalPlaces": 0,
+      "Value": 0.0202384169380067
+    },
+    {
+      "Max": 2.5,
+      "Min": 1.3,
+      "MemberName": "LAIref_hruDR",
+      "Fixed": true,
+      "DisplayName": "HRU:DR Reference Leaf Area Index (at which fveg = 0.63)",
+      "DecimalPlaces": 0,
+      "Value": 2.5
+    },
+    {
+      "Max": 2.5,
+      "Min": 1.3,
+      "MemberName": "LAIref_hruSR",
+      "Fixed": true,
+      "DisplayName": "HRU:SR Reference Leaf Area Index (at which fveg = 0.63)",
+      "DecimalPlaces": 0,
+      "Value": 1.4
+    },
+    {
+      "Max": 1,
+      "Min": 0.01,
+      "MemberName": "ne_scale",
+      "Fixed": false,
+      "DisplayName": "Scale for effective porosity",
+      "DecimalPlaces": 0,
+      "Value": 0.0551891007464962
+    },
+    {
+      "Max": 3,
+      "Min": 0.1,
+      "MemberName": "Pref_gridscale",
+      "Fixed": false,
+      "DisplayName": "Pref_gridscale",
+      "DecimalPlaces": 0,
+      "Value": 1.81529436817838
+    },
+    {
+      "Max": 20,
+      "Min": 3,
+      "MemberName": "RD_hruDR",
+      "Fixed": true,
+      "DisplayName": "HRU:DR Rooting Depth",
+      "DecimalPlaces": 0,
+      "Value": 6.0
+    },
+    {
+      "Max": 2,
+      "Min": 0.5,
+      "MemberName": "RD_hruSR",
+      "Fixed": true,
+      "DisplayName": "HRU:SR Rooting Depth",
+      "DecimalPlaces": 0,
+      "Value": 1.0
+    },
+    {
+      "Max": 0.8,
+      "Min": 0.03,
+      "MemberName": "S_sls_hruDR",
+      "Fixed": false,
+      "DisplayName": "HRU:DR Specific Canopy Rainfall Storage Capacity Per Unit Leaf Area",
+      "DecimalPlaces": 0,
+      "Value": 0.0945974208063683
+    },
+    {
+      "Max": 0.8,
+      "Min": 0.03,
+      "MemberName": "S_sls_hruSR",
+      "Fixed": false,
+      "DisplayName": "HRU:SR Specific Canopy Rainfall Storage Capacity Per Unit Leaf Area",
+      "DecimalPlaces": 0,
+      "Value": 0.042742565428351
+    },
+    {
+      "Max": 3,
+      "Min": 0.5,
+      "MemberName": "S0max_scale",
+      "Fixed": false,
+      "DisplayName": "Scale for Maximum water storage surface layer (Top)",
+      "DecimalPlaces": 0,
+      "Value": 2.99584999113427
+    },
+    {
+      "Max": 1,
+      "Min": 0.5,
+      "MemberName": "Sdmax_scale",
+      "Fixed": false,
+      "DisplayName": "Scale for Maximum water storage deep layer (Deep)",
+      "DecimalPlaces": 0,
+      "Value": 0.795122015004998
+    },
+    {
+      "Max": 70,
+      "Min": 0.7,
+      "MemberName": "SLA_hruDR",
+      "Fixed": true,
+      "DisplayName": "HRU:DR Specific Leaf Area",
+      "DecimalPlaces": 0,
+      "Value": 3.0
+    },
+    {
+      "Max": 70,
+      "Min": 0.7,
+      "MemberName": "SLA_hruSR",
+      "Fixed": true,
+      "DisplayName": "HRU:SR Specific Leaf Area",
+      "DecimalPlaces": 0,
+      "Value": 10.0
+    },
+    {
+      "Max": 1,
+      "Min": 0.01,
+      "MemberName": "slope_coeff",
+      "Fixed": false,
+      "DisplayName": "slope_coeff",
+      "DecimalPlaces": 0,
+      "Value": 0.951765660211542
+    },
+    {
+      "Max": 3,
+      "Min": 0.5,
+      "MemberName": "Ssmax_scale",
+      "Fixed": false,
+      "DisplayName": "Scale for Maximum water storage shallow layer (Shallow)",
+      "DecimalPlaces": 0,
+      "Value": 2.43326110876421
+    },
+    {
+      "Max": 1000,
+      "Min": 20,
+      "MemberName": "Tgrow_hruDR",
+      "Fixed": true,
+      "DisplayName": "HRU:DR Characteristic Time Scale for Vegetation Growth Towards Equilibrium",
+      "DecimalPlaces": 0,
+      "Value": 1000.0
+    },
+    {
+      "Max": 1000,
+      "Min": 20,
+      "MemberName": "Tgrow_hruSR",
+      "Fixed": true,
+      "DisplayName": "HRU:SR Characteristic Time Scale for Vegetation Growth Towards Equilibrium",
+      "DecimalPlaces": 0,
+      "Value": 150.0
+    },
+    {
+      "Max": 200,
+      "Min": 10,
+      "MemberName": "Tsenc_hruDR",
+      "Fixed": true,
+      "DisplayName": "HRU:DR Characteristic Time Scale for Vegetation Senescence Towards Equilibrium",
+      "DecimalPlaces": 0,
+      "Value": 60.0
+    },
+    {
+      "Max": 200,
+      "Min": 10,
+      "MemberName": "Tsenc_hruSR",
+      "Fixed": true,
+      "DisplayName": "HRU:SR Characteristic Time Scale for Vegetation Senescence Towards Equilibrium",
+      "DecimalPlaces": 0,
+      "Value": 10.0
+    },
+    {
+      "Max": 10,
+      "Min": 0.001,
+      "MemberName": "Ud0_hruDR",
+      "Fixed": false,
+      "DisplayName": "HRU:DR Maximum Root Water Uptake Rates From Deep Soil",
+      "DecimalPlaces": 0,
+      "Value": 7.136379707595849
+    },
+    {
+      "Max": 10,
+      "Min": 0,
+      "MemberName": "Ud0_hruSR",
+      "Fixed": true,
+      "DisplayName": "HRU:SR Maximum Root Water Uptake Rates From Deep Soil",
+      "DecimalPlaces": 0,
+      "Value": 0.0
+    },
+    {
+      "Max": 7,
+      "Min": 1,
+      "MemberName": "Us0_hruDR",
+      "Fixed": true,
+      "DisplayName": "HRU:DR Maximum Root Water Uptake Rates From Shallow Soil",
+      "DecimalPlaces": 0,
+      "Value": 6.0
+    },
+    {
+      "Max": 7,
+      "Min": 1,
+      "MemberName": "Us0_hruSR",
+      "Fixed": true,
+      "DisplayName": "HRU:SR Maximum Root Water Uptake Rates From Shallow Soil",
+      "DecimalPlaces": 0,
+      "Value": 6.0
+    },
+    {
+      "Max": 1,
+      "Min": 0.05,
+      "MemberName": "Vc_hruDR",
+      "Fixed": true,
+      "DisplayName": "HRU:DR Vegetation Photosynthetic Capacity Index Per Unit Canopy Cover",
+      "DecimalPlaces": 0,
+      "Value": 0.35
+    },
+    {
+      "Max": 1,
+      "Min": 0.05,
+      "MemberName": "Vc_hruSR",
+      "Fixed": true,
+      "DisplayName": "HRU:SR Vegetation Photosynthetic Capacity Index Per Unit Canopy Cover",
+      "DecimalPlaces": 0,
+      "Value": 0.65
+    },
+    {
+      "Max": 0.9,
+      "Min": 0.6,
+      "MemberName": "w0limE_hruDR",
+      "Fixed": true,
+      "DisplayName": "HRU:DR Relative Top Soil Water Content at Which Evaporation is Reduced",
+      "DecimalPlaces": 0,
+      "Value": 0.85
+    },
+    {
+      "Max": 0.9,
+      "Min": 0.6,
+      "MemberName": "w0limE_hruSR",
+      "Fixed": true,
+      "DisplayName": "HRU:SR Relative Top Soil Water Content at Which Evaporation is Reduced",
+      "DecimalPlaces": 0,
+      "Value": 0.85
+    },
+    {
+      "Max": 0.5,
+      "Min": 0.2,
+      "MemberName": "w0ref_alb_hruDR",
+      "Fixed": true,
+      "DisplayName": "HRU:DR Reference Value of w0 Determining the Rate of Albedo Decrease With Wetness",
+      "DecimalPlaces": 0,
+      "Value": 0.3
+    },
+    {
+      "Max": 0.5,
+      "Min": 0.2,
+      "MemberName": "w0ref_alb_hruSR",
+      "Fixed": true,
+      "DisplayName": "HRU:SR Reference Value of w0 Determining the Rate of Albedo Decrease With Wetness",
+      "DecimalPlaces": 0,
+      "Value": 0.3
+    },
+    {
+      "Max": 0.5,
+      "Min": 0.15,
+      "MemberName": "wdlimU_hruDR",
+      "Fixed": true,
+      "DisplayName": "HRU:DR Deep Water-Limiting Relative Water Content",
+      "DecimalPlaces": 0,
+      "Value": 0.3
+    },
+    {
+      "Max": 0.5,
+      "Min": 0.15,
+      "MemberName": "wdlimU_hruSR",
+      "Fixed": true,
+      "DisplayName": "HRU:SR Deep Water-Limiting Relative Water Content",
+      "DecimalPlaces": 0,
+      "Value": 0.3
+    },
+    {
+      "Max": 0.5,
+      "Min": 0.15,
+      "MemberName": "wslimU_hruDR",
+      "Fixed": true,
+      "DisplayName": "HRU:DR Shallow Water-Limiting Relative Water Content",
+      "DecimalPlaces": 0,
+      "Value": 0.3
+    },
+    {
+      "Max": 0.5,
+      "Min": 0.15,
+      "MemberName": "wslimU_hruSR",
+      "Fixed": true,
+      "DisplayName": "HRU:SR Shallow Water-Limiting Relative Water Content",
+      "DecimalPlaces": 0,
+      "Value": 0.3
+    }
+]

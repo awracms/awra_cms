@@ -1,0 +1,34 @@
+Output,Version3,Version355,Version4,Version45,Min,Max,Description,Units,Temporal_Agg,Temporal_Agg_alt
+qtot_avg,Output,Output,Output,Output,0,1000,Total runoff: averaged across both HRUs (mm),mm,Sum,-
+qgtot_avg,-,-,Output,Output,0,1000,Baseflow: averaged across both HRUs (mm),mm,Sum,-
+qiftot_avg,-,-,Output,Output,0,1000,Total interflow between top and shallow soil layers: averaged across both HRUs (mm),mm,Sum,-
+qrtot_avg,-,-,Output,Output,0,1000,Total surface runoff: averaged across both HRUs (mm),mm,Sum,-
+e0_avg,-,-,Output,Output,0,100,Potential evapotranspiration (atmospheric demand): averaged across both HRUs (mm),mm,Sum,
+eg_avg,-,-,Output,Output,0,20,Total evaporation from groundwater: averaged across both HRUs (mm),mm,Sum,
+ee_avg,-,-,Output,Output,0,20,"Total evaporation (from soil, groundwater, surface water and canopy interception): averaged across both HRUs (mm)",mm,Sum,-
+et_avg,-,-,Output,Output,0,20,Total plant transpiration (from vadose zone and groundwater): averaged across both HRUs (mm),mm,Sum,-
+etot_avg,Output,Output,Output,Output,0,20,Total evapotranspiration (sum of ee_avg and et_avg): averaged across both HRUs (mm),mm,Sum,-
+y_avg,Output,Output,Output,Output,0,1000,Groundwater transpiration: averaged across both HRUs (mm),mm,Sum,-
+mbal_avg,Output,Output,Output,Output,0,1.00E-03,Mass balance check (P - Qtot_avg - Etot_avg - delta(S0_avg +Ss_avg +Sd_avg) - delta_Sg_bal - delta_Sr_bal): averaged across both HRUs (mm),mm,Sum,-
+dd_avg,Output,Output,Output,Output,0,1000,Deep soil layer drainage total: averaged across both HRUs (mm),mm,Sum,-
+s_avg,Output,Output,Output,Output,0,1,Soil moisture fraction over full model soil profile (0-500 cm; all three soil layers combined): averaged across both HRUs,-,Average,Final_Day_Value
+s0_avg,Output,Output,Output,Output,0,s0max,Total moisture in top soil layer (0-10 cm): averaged across both HRUs (mm),mm,Average,Final_Day_Value
+ss_avg,Output,Output,Output,Output,0,ssmax,Total moisture in shallow soil layer (10-100 cm): averaged across both HRUs (mm),mm,Average,Final_Day_Value
+sd_avg,Output,Output,Output,Output,0,sdmax,Total moisture in deep soil layer (100-500 cm): averaged across both HRUs (mm),mm,Average,Final_Day_Value
+s0_sr,Output,Output,Output,Output,0,s0max,Total moisture in top soil layer (0-10 cm) for shallow rooted HRU (mm),mm,Average,Final_Day_Value
+ss_sr,Output,Output,Output,Output,0,ssmax,Total moisture in shallow soil layer (10-100 cm) for shallow rooted HRU (mm),mm,Average,Final_Day_Value
+sd_sr,Output,Output,Output,Output,0,sdmax,Total moisture in deep soil layer (100-500 cm) for shallow rooted HRU (mm),mm,Average,Final_Day_Value
+s0_dr,Output,Output,Output,Output,0,s0max,Total moisture in top soil layer (0-10 cm) for deep rooted HRU (mm),mm,Average,Final_Day_Value
+ss_dr,Output,Output,Output,Output,0,ssmax,Total moisture in shallow soil layer (10-100 cm) for deep rooted HRU (mm),mm,Average,Final_Day_Value
+sd_dr,Output,Output,Output,Output,0,sdmax,Total moisture in deep soil layer (100-500 cm) for deep rooted HRU (mm),mm,Average,Final_Day_Value
+sg_bal,Output,Output,Output,Output,,,Current groundwater store (mm),mm,Average,Final_Day_Value
+sr_bal,Output,Output,Output,Output,0,,Current surface water store (mm),mm,Average,Final_Day_Value
+mleaf_sr,Output,Output,Output,Output,0,,Dry leaf biomass per unit area for shallow rooted HRU (kg/m^2),kg/m^2,Average,Final_Day_Value
+mleaf_dr,Output,Output,Output,Output,0,,Dry leaf biomass per unit area for deep rooted HRU (kg/m^2),kg/m^2,Average,Final_Day_Value
+lai_avg,Output,Output,Output,Output,0,LAImax,Leaf Area Index: averaged across both HRUs,-,Average,Final_Day_Value
+fveg_avg,Output,Output,Output,Output,0,1,Fraction of vegetation in pixel: averaged across both HRUs,-,Average,Final_Day_Value
+evi_avg,Output,Output,Output,Output,0,1,Enhanced Vegetation Index: averaged across both HRUs,-,Average,Final_Day_Value
+fsat_avg,Output,Output,Output,Output,0,1,Fraction of pixel that is saturated: averaged across both HRUs,-,Average,Final_Day_Value
+wunsat_avg,Output,Output,Output,Output,0,1,Fraction of soil moisture in the top soil layer: averaged across both HRUs,-,Average,Final_Day_Value
+gwflux_avg,Output,Output,-,-,0,1000,Net groundwater flux (mm): <= v355,mm,Sum,-
+dgw_bal,-,-,-,Output,0,1000,Depth to groundwater,m,Average,-

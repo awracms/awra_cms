@@ -1,0 +1,84 @@
+AWRAMS LICENCE
+(Variation of BSD 3 licence)
+
+Copyright 2016, Commonwealth of Australia as represented by the Bureau of Meteorology. All rights reserved.
+
+By accessing or using the AWRAMS software, code, data (input or validation data) or documentation ("AWRAMS
+ Material"), You agree to be bound by these licence terms including any terms or notices incorporated by
+ reference (as updated from time to time) on and from the date You first access or use of the AWRAMS
+ Material. You acknowledge that Your agreement to these licence terms constitutes a legally binding
+ agreement between You and the Commonwealth of Australia as represented by the Bureau of Meteorology
+ ("copyright holder").  If You do not agree to be bound by any of these licence terms, You are not
+ authorised to access and use the AWRAMS Material.
+
+The reference to "You" ("or Your") is a reference to an individual or legal entity exercising permissions
+ granted under these licence terms.
+
+Redistribution and use of AWRAMS Material in source and binary forms, with or without modification, are
+ permitted provided that the following conditions are met:
+ * Redistributions of AWRAMS Material in source code must retain this AWRAMS licence in its entirety.
+ * Redistributions of AWRAMS Material in binary form must reproduce this AWRAMS licence in its entirety.
+ * Neither the name of the copyright holder nor the names of its contributors may be used to endorse or
+    promote products derived from AWRAMS Material without specific prior written permission.
+ * Redistribution and use of any part of the AWRAMS Material for commercial purposes must not occur
+    without prior written permission from the Bureau of Meteorology (email: awracms@bom.gov.au). For the
+    avoidance of doubt, ("commercial purposes") includes without limitation developing and supplying a
+    product or service to another party for profit or other commercial gain.
+ * You will make any and all of Your modifications to the AWRAMS Material (including modifications to code,
+    data or documentation) available to the Bureau of Meteorology for possible use by it in any way,
+    including, but not limited to, incorporating modifications into the existing AWRAMS Material if they
+    meet the relevant criteria and making these modifications available to third parties.
+ * You will complete and sign and return to the Bureau of Meteorology (by email to awracms@bom.gov.au) the
+    Contributor Licence Agreement ("CLA") which accompanies these licence terms in relation to any and all
+    of Your modifications to the AWRAMS Material referred to above.
+
+TO THE FULLEST EXTENT PERMITTED BY LAW, THE AWRAMS MATERIAL IS PROVIDED BY THE COPYRIGHT HOLDER AND
+ CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED OR EXCLUDED.  TO THE
+ FULLEST EXTENT PERMITTED BY LAW, NEITHER THE COPYRIGHT HOLDER NOR ANY CONTRIBUTOR WILL BE LIABLE FOR ANY
+ DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+ PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWSOEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THE AWRAMS MATERIAL, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH CLAIM, LIABILITY, LOSS OR DAMAGE.
+
+ACCESS TO INPUT/VALIDATION DATA
+ You will need to complete and sign this AWRAMS licence and the CLA and return signed copies to the Bureau
+ of Meteorology (by email to awracms@bom.gov.au) to enable the Bureau of Meteorology to assess whether to
+ issue You with a link to the input data and validation data for AWRAMS together with a user name and
+ password for access to the data.  You agree that the Bureau of Meteorology may allow or deny You access to
+ the input data or validation data for AWRAMS in its absolute discretion and without giving reasons
+ following receipt of the completed and signed AWRAMS licence and CLA.  If the Bureau of Meteorology grants
+ you access to the input and validation data you agree that Your access to and use of this data will be
+ governed by the terms of this AWRAMS licence.
+
+Irrespective of whether or not these licence terms and the CLA are signed and submitted to the Bureau as
+ required above, You agree that the licence obligations remain legally binding and enforceable to the extent
+ permitted by law as a consequence of You accessing or using the AWRAMS Material and on and from the date on
+ which You first access or use the AWRAMS Material.
+
+
+USER DETAILS (please complete)
+Name (individual):
+
+Name of Organisation (legal entity):
+
+ABN:
+
+Email address:
+
+Address:
+
+Phone number:
+
+Please state the nature and purpose of proposed use of AWRAMS Material:
+
+
+Signed (individual):
+
+Date:
+
+Signed (legal entity) by its duly authorised representative:
+
+Date:
+
