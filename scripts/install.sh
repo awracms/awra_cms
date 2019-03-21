@@ -90,7 +90,7 @@ fi
 
 # Version of AWRACMS
 if [[ -z "${AWRAMS_VERSION}" ]]; then
-    AWRAMS_VERSION="dev"
+    AWRAMS_VERSION="AWRA_CMS_v1.2"
     echo "${green}[AWRACMS] Version: ${AWRAMS_VERSION}${reset}"
 else
     echo "${green}[AWRACMS] Version: ${AWRAMS_VERSION}${reset}"
