@@ -48,7 +48,8 @@ def tear_down():
         pass
 
 
-@with_setup(setup,tear_down)
+
+@nottest
 def test_sim():
     '''
     Required inputs
@@ -316,7 +317,7 @@ def test_fao_static_wind():
     sim = SimulationServer(et)
     sim.run(imap,omap,period,extent)
 
-if __name__ == "__main__":
+# if __name__ == "__main__":
     # test_ondemand_msl()
     # test_asce()
-    test_fao_static_wind()
+    # test_fao_static_wind()
