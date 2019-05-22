@@ -31,14 +31,14 @@ set MSMPI_DL="https://download.microsoft.com/download/A/E/0/AE002626-9D9D-448D-8
 set MINICONDA_DL="https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe"
 set CONDA_ENV=win_conda_install_env.yml
 set MPI4PY_VERSION=3.0.0
-set AWRA_VERSION=dev
+set AWRA_VERSION=AWRA_CMS_v1.2
 
 :AWRAversion
-    if '%AWRA_VERSION%' == 'dev' (
-        set /p VERSION_A="What version of AWRACMS would you like to download? Press enter for default [dev]: "
+    if '%AWRA_VERSION%' == 'AWRA_CMS_v1.2' (
+        set /p VERSION_A="What version of AWRACMS would you like to download? Press enter for default [AWRA_CMS_v1.2]: "
     )
     if '%VERSION_A%' == '' (
-        echo [AWRACMS] Using default version: dev
+        echo [AWRACMS] Using default version: AWRA_CMS_v1.2
         goto InstallPath
     ) else (
         set AWRA_VERSION=%VERSION_A%
