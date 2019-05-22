@@ -21,7 +21,7 @@ The Bureau's operational implementation of AWRA-L (the landscape component of AW
 AWRA-L is a one dimensional, 0.05° grid based water balance model over the Australian continent that has semi-distributed representation of the soil, groundwater and surface water stores. AWRA-L is a three soil layer (top: 0-10cm, shallow: 10cm-100cm, deep: 100cm-600cm), two hydrological response unit (shallow rooted versus deep rooted) model.
 
 ## Install instructions
-See [INSTALL-GUIDE.md](https://github.com/awracms/awra_cms/INSTALL-GUIDE.md).
+See [INSTALL-GUIDE.md](https://github.com/awracms/awra_cms/blob/AWRA_CMS_v1.2/INSTALL-GUIDE.md).
 
 ## Getting a particular version
 Assuming you have git installed run the following from your command line (git bash if you're on windows):
