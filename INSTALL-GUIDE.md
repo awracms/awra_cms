@@ -1,9 +1,9 @@
 # AWRA Community Modelling System
 
 # Installation Guide
-[Linux](#-Linux)
+[Linux](#Linux)
 
-[Windows](#-Windows)
+[Windows](#Windows)
 
 # Linux
 
