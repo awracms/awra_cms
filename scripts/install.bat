@@ -302,7 +302,7 @@ REM Pip install awra-cms and mpi4py
     pip freeze | findstr "awra"
     if '%errorlevel%' NEQ '0' (
         echo [AWRACMS] Installing AWRACMS
-        pip install -e "%INSTALL_PATH%\awrams_cm\utils" "%INSTALL_PATH%\awrams_cm\benchmarking" "%INSTALL_PATH%\awrams_cm\models" "%INSTALL_PATH%\awrams_cm\simulation" "%INSTALL_PATH%\awrams_cm\visualisation" "%INSTALL_PATH%\awrams_cm\calibration" "%INSTALL_PATH%\awrams_cm\cluster"
+        pip install -e "%INSTALL_PATH%\awrams_cm\packages"
     )
     pip freeze | findstr "mpi4py"
     if '%errorlevel%' NEQ '0' (
@@ -338,7 +338,7 @@ REM Create activation script
     )
     echo set AWRAMS_BASE_PATH=%INSTALL_PATH%\awrams_cm\awrams
     IF NOT "%DATA_PATH%"=="" (
-        echo set AWRAMS_DATA_PATH=%DATA_PATH%
+        echo set AWRAMS_DATA_PATH=%DATA_PATH%\data
     )
     echo cmd /k echo [AWRACMS] AWRACMS has been activated
     )>"%INSTALL_PATH%\awrams_cm\activation.bat"
@@ -346,7 +346,7 @@ REM Create activation script
 
 
 :RunTests
-    if /i '%DATA_A%' == y (
+    if /i '%DATA_A%' == 'y' (
         call %INSTALL_PATH%\Miniconda3\Scripts\activate.bat awra-cms
         cd %INSTALL_PATH%\awrams_cm\packages
         python setup.py nosetests
