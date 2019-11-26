@@ -347,7 +347,7 @@ REM Create activation script
 
 :RunTests
     if /i '%DATA_A%' == 'y' (
-        call %INSTALL_PATH%\Miniconda3\Scripts\activate.bat awra-cms
+        call %INSTALL_PATH%\awrams_cm\activation.bat
         cd %INSTALL_PATH%\awrams_cm\packages
         python setup.py nosetests
         if '%errorlevel%' == '0' (
