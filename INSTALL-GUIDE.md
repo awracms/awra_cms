@@ -10,15 +10,15 @@
 [Windows](#Windows)
 
 # Docker
-## installation
-1. Clone the project: https://github.com/awracms/awra_cms.git
-2. CD to the folder and run `source docker_build.sh`
+## Installation
+1. Clone the project: `git clone -b '#225-containerise-awracms' https://github.com/awracms/awra_cms.git`
+2. CD to the folder and run `$ source docker_build_awracms.sh`
 3. Wait for sometime, at the end of the build you will be inside the cointaner. The container will have:
-   * Preload awracms conda environment (activated)
    * Preloaded Conda environment (4.8.1) and OpenMPI (3.1.3) package which is required to run the AWRACMS.
-   * Test data cloned.
+   * AWRACMS Conda environment (activated).
+   * Test data (cloned).
 ## How to guide:
-   * To exit from container `$ exit`
+   * To exit from the `awracms` container `$ exit`
    * Rerun container `$ docker run -it awracms bash`
    * Some examples to run commands from outside the container 
      * `$ docker run -it awracms /bin/bash -c "python --version"`
