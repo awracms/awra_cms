@@ -12,7 +12,11 @@
 # Docker
 ## Installation
 1. Clone the project: `git clone -b '#225-containerise-awracms' https://github.com/awracms/awra_cms.git`
-2. CD to the folder and run `$ source docker_build_awracms.sh`
+2. CD to the folder and run:
+   * Linux and Mac: `source docker_build.sh`
+   * Windows: 
+      * `docker build -t awracms -f docker/Dockerfile .`
+      * `docker run -it awracms bash`
 3. Wait for sometime, at the end of the build you will be inside the cointaner. The container will have:
    * Preloaded Conda environment (4.8.1) and OpenMPI (3.1.3) package which is required to run the AWRACMS.
    * AWRACMS Conda environment (activated).
