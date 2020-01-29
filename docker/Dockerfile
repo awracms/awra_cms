@@ -15,8 +15,6 @@ ENV MPI_DL="https://download.open-mpi.org/release/open-mpi/v3.1/openmpi-${MPI_VE
 ENV AWRAMS_BASE_PATH=/home/awracms
 ENV INSTALL_PATH=${AWRAMS_BASE_PATH}
 
-#RUN yum -y install sudo 
-
 # Miniconda
 RUN yum -y install sudo \
     && sudo yum -y update \
@@ -25,17 +23,16 @@ RUN yum -y install sudo \
     && sudo bash /tmp/miniconda.sh -bfp /usr/local/ \
     && sudo rm -rf /tmp/miniconda.sh 
   
-
 # This is required to clone AWRA CMS data
 RUN conda install git git-lfs -y && yum install which -y
 
-# Install AWRA dependencies for conda
+# Install Conda packages
 RUN conda env create -f /linux_conda_install_env.yml
 
-# GCC
+# Intall GCC with C++
 RUN yum clean all && yum update && yum install which make gcc-c++ curl -y
 
-# Create a user account without password
+# Create a new user account without a password
 RUN echo '%awracms ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers && adduser awracms && passwd -d awracms
 USER awracms
 WORKDIR /home/awracms
@@ -80,7 +77,6 @@ ENV CLONE_DATA=TRUE
 ENV AWRACMS_REPOSITORY="https://github.com/awracms/awra_cms.git"
 ENV AWRACMS_DATA_REPOSITORY="https://github.com/awracms/awracms_data.git"
 
-
 # awracms user to install AWRA 
 USER awracms
 
@@ -94,18 +90,18 @@ ENV PATH /opt/conda/envs/${CONDA_ENV_NAME}/bin:$PATH
 # Check if conda env in loaded and activated
 RUN python -c "import pandas" && conda env list
 
-# Install git lfs and clone AWRACMS
+# Install git lfs and clone AWRACMS project source code
 RUN git lfs install && git clone -b "${AWRAMS_VERSION}" "${AWRACMS_REPOSITORY}" "${REPO_PATH}/"
 
 # Clone data to run tests
 RUN git clone "$AWRACMS_DATA_REPOSITORY" "${DATA_PATH}/data"
 
 ###############    Some cleanup work ############### 
-# Remove .git folder form the container
+# Remove .git folder from the container
 RUN rm -rf "${DATA_PATH}/data/.git"
 
 
-# ENV variables required for the Activation script
+# ENV variables required to run AWRACMS
 ENV PYTHONPATH="${PYTHONPATH}:/home/awracms/awrams_cm/awrams/code/user"
 ENV AWRAMS_BASE_PATH="/home/awracms/awrams_cm/awrams"
 ENV AWRAMS_DATA_PATH="${REPO_PATH}/awrams/data"
@@ -113,5 +109,5 @@ ENV AWRAMS_DATA_PATH="${REPO_PATH}/awrams/data"
 # Create Symlinks for openmpi
 RUN for i in *; do alias "${i}"="/home/awracms/.openmpi/bin/${i}"; done
 
-# Install rest of the AWRA dependencies from the install script
+# Install rest of the AWRACMS dependencies from the install script
 RUN curl -s https://raw.githubusercontent.com/awracms/awra_cms/%23225-containerise-awracms/docker/docker_install_dependencies.sh | bash
