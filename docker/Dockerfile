@@ -114,4 +114,4 @@ ENV AWRAMS_DATA_PATH="${REPO_PATH}/awrams/data"
 RUN for i in *; do alias "${i}"="/home/awracms/.openmpi/bin/${i}"; done
 
 # Install rest of the AWRA dependencies from the install script
-#RUN curl -s http://subhu-mac.local:8000/docker_install_dependencies.sh | bash
+RUN curl -s https://raw.githubusercontent.com/awracms/awra_cms/%23225-containerise-awracms/docker/docker_install_dependencies.sh | bash
