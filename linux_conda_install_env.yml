@@ -23,6 +23,7 @@ dependencies:
   - cartopy
   - xarray
   - paramiko
+  - pip=20.0.2
   - pip:
     - SALib
     - safety

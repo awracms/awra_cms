@@ -13,7 +13,7 @@
 ## Installation
 1. Clone the project: `git clone -b '#225-containerise-awracms' https://github.com/awracms/awra_cms.git`
 2. CD to the folder and run:
-   * Linux and Mac: `source docker_build.sh`
+   * Linux and Mac: `source docker_build_awracms.sh`
    * Windows: 
       * `docker build -t awracms -f docker/Dockerfile .`
       * `docker run -it awracms bash`
@@ -22,11 +22,19 @@
    * AWRACMS Conda environment (activated).
    * Test data (cloned).
 ## How to guide:
+   ### With container
    * To exit from the `awracms` container `$ exit`
    * Rerun container `$ docker run -it awracms bash`
    * Some examples to run commands from outside the container 
      * `$ docker run -it awracms /bin/bash -c "python --version"`
      * `$ docker run -it awracms /bin/bash -c "conda env list"`
+
+   ### How to run Jupyter Notebooks
+   * Make sure you are outside the container, if not then in container type `$ exit`
+   * Run the following command from the terminal/cmd:
+     `docker run -i -t -p 8888:8888 awracms /bin/bash -c "/usr/local/envs/awra-cms/bin/jupyter notebook --notebook-dir=/home/awracms/awrams_cm/Training --ip='0.0.0.0' --port=8888 --allow-root --NotebookApp.token=''"`
+   * After successfully running the command, open any browser and enter `http://0.0.0.0:8888`
+
      
 
 # Linux

@@ -5,12 +5,15 @@
 
 FROM centos:centos7
 
+LABEL maintainer="Subhashs Sharma"  email="awracms@bom.gov.au"
+
 WORKDIR /root
 
 ADD linux_conda_install_env.yml /
 
 # ENV Variables
 ARG MPI_VER=3.1.3
+ENV MPI4PY_VERSION=3.0.0
 ENV MPI_DL="https://download.open-mpi.org/release/open-mpi/v3.1/openmpi-${MPI_VER}.tar.bz2"
 ENV AWRAMS_BASE_PATH=/home/awracms
 ENV INSTALL_PATH=${AWRAMS_BASE_PATH}
@@ -24,7 +27,7 @@ RUN yum -y install sudo \
     && sudo rm -rf /tmp/miniconda.sh 
   
 # This is required to clone AWRA CMS data
-RUN conda install git git-lfs -y && yum install which -y
+RUN conda install git git-lfs -y && conda install jupyter -y --quiet && yum install which -y
 
 # Install Conda packages
 RUN conda env create -f /linux_conda_install_env.yml
